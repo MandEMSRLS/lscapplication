@@ -40,75 +40,82 @@ export default function NewLscPage() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1">
             <div className="p-4">
-              <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">LSC Name : </label>
+              <label className="text-sm font-medium text-zinc-700 dark:text-zinc-300">LSC Name : <span className="text-red-400">*</span> </label>
               <input
                 type="text"
                 placeholder="LSC Name"
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
+                required
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" >Date Of Established :</label>
+              <label className="text-sm font-medium" >Date Of Established : <span className="text-red-400">*</span></label>
               <input
                 type="date"
                 placeholder="LSC Established"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" >Name Of Operator :</label>
+              <label className="text-sm font-medium" >Name Of Operator : <span className="text-red-400">*</span></label>
               <input
-                type="number"
-                placeholder="Number of Operator"
+                type="text"
+                placeholder="Name of Operator"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" >Name Of Staff Engage :</label>
+              <label className="text-sm font-medium" >Name Of Staff Engage : <span className="text-red-400">*</span></label>
               <input
                 type="number"
                 placeholder="Number of Staff Engage"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" >Contact Detail :</label>
+              <label className="text-sm font-medium" >Contact Detail : <span className="text-red-400">*</span></label>
               <input
                 type="number"
                 placeholder="Contact Detail"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" >Have Building :</label>
-              <select name="" id="" className="h-11 w-full rounded-lg border border-zinc-300">
+              <label className="text-sm font-medium" >Have Building : <span className="text-red-400">*</span></label>
+              <select name="" id="" className="h-11 w-full rounded-lg border border-zinc-300" required>
                 <option value="1">Yes</option>
                 <option value="0">No</option>
               </select>
 
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" >Have Furniture :</label>
-              <select name="" id="" className="h-11 w-full rounded-lg border border-zinc-300">
+              <label className="text-sm font-medium" >Have Furniture : <span className="text-red-400">*</span></label>
+              <select name="" id="" className="h-11 w-full rounded-lg border border-zinc-300" required>
                 <option value="1">Yes</option>
                 <option value="0">No</option>
               </select>
             </div>
 
             <div className=" p-4">
-              <label className="text-sm font-medium" >Service Provided :</label>
+              <label className="text-sm font-medium" >Service Provided :<span className="text-red-400">*</span></label>
               <input
                 type="text"
                 placeholder="Service Provided"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
 
             <div className="p-4">
-              <label className="text-sm font-medium" >Contact Email Address :</label>
+              <label className="text-sm font-medium" >Contact Email Address : <span className="text-red-400">*</span></label>
               <input
                 type="email"
                 placeholder="Contact Email"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
@@ -135,34 +142,38 @@ export default function NewLscPage() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1">
             <div className="p-4">
-              <label className="text-sm font-medium" > CLF Name :</label>
+              <label className="text-sm font-medium" > CLF Name :<span className="text-red-400">*</span></label>
               <input
                 type="text"
                 placeholder="CLF Name"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" > CLF Code :</label>
+              <label className="text-sm font-medium" > CLF Code :<span className="text-red-400">*</span></label>
               <input
                 type="text"
                 placeholder="CLF Code"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" > CLF Formation :</label>
+              <label className="text-sm font-medium" > CLF Formation :<span className="text-red-400">*</span></label>
               <input
                 type="text"
                 placeholder="CLF Formation"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" > No of LSC Established :</label>
+              <label className="text-sm font-medium" > No of LSC Established :<span className="text-red-400">*</span></label>
               <input
                 type="number"
                 placeholder="No of LSC Established"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
@@ -173,18 +184,20 @@ export default function NewLscPage() {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-1">
             <div className=" p-4">
-              <label className="text-sm font-medium" > District :</label>
+              <label className="text-sm font-medium" > District :<span className="text-red-400">*</span></label>
               <input
                 type="text"
                 placeholder="District"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
             <div className="p-4">
-              <label className="text-sm font-medium" > Block :</label>
+              <label className="text-sm font-medium" > Block :<span className="text-red-400">*</span></label>
               <input
                 type="text"
                 placeholder="Block"
+                required
                 className="h-11 w-full rounded-lg border border-zinc-300 bg-transparent px-3 text-sm outline-none focus:ring-2 focus:ring-black dark:border-zinc-700 dark:focus:ring-white transition-all"
               />
             </div>
@@ -251,6 +264,13 @@ export default function NewLscPage() {
               />
             </div>
           </div>
+
+          <button 
+            type="submit"
+            className="mt-2 flex h-11 w-full items-center justify-center rounded-lg bg-black text-white font-medium transition-colors hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200"
+          >
+           Submit
+          </button>
         </form>
       </main>
     </div>
